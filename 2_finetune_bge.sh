@@ -1,0 +1,19 @@
+torchrun --nproc_per_node 1 \
+-m FlagEmbedding.baai_general_embedding.finetune.run \
+--output_dir model/trianed_bgem3 \
+--model_name_or_path model/bge-m3 \
+--train_data datasets/train_data_for_bge.jsonl \
+--learning_rate 1e-5 \
+--fp16 \
+--num_train_epochs 5 \
+--per_device_train_batch_size 1 \
+--dataloader_drop_last True \
+--normlized True \
+--temperature 0.02 \
+--query_max_len 512 \
+--passage_max_len 1024 \
+--train_group_size 3 \
+--negatives_cross_device \
+--logging_steps 10 \
+--save_steps 2000 \
+--query_instruction_for_retrieval ""
