@@ -23,7 +23,15 @@ Please install dependencies by
 ```shell
 pip install -r requirements.txt
 ```
+## datasets
+The raw dataset can be downloaded from [BaiduPan](https://pan.baidu.com/s/1bFM6QM1tv4cz-Vx8VEGp7A?pwd=v2bb) with password v2bb, [Aliyun](https://open-data-set.oss-cn-beijing.aliyuncs.com/oag-benchmark/kddcup-2024/AQA/AQA.zip)
+The processed data can be downloaded from [Aliyun](https://open-data-set.oss-cn-beijing.aliyuncs.com/oag-benchmark/kddcup-2024/AQA/aqa_train_data_processed.zip).
 
+## model
+The bge-m3,bge-reranker-v2-minicpm-layerwise,llama3 models can be obtained from [huggingface](https://huggingface.co/models)
+
+The final fusion model of the bge-m3 and trained models can be found here 
+[mixed_model](https://www.alipan.com/s/9fks9UC7hCY)
 
 ## Run Code
 
